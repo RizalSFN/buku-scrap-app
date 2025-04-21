@@ -1,8 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Flyon UI */
-@plugin "flyonui";
-@import "flyonui/variant.css";
-@source "../node_modules/flyonui/flyonui.js"
