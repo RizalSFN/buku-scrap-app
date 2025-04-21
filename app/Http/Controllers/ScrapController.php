@@ -9,7 +9,7 @@ class ScrapController extends Controller
 {
     public function index()
     {
-        $books = Buku::get();
+        $books = Buku::paginate(10);
         return view('index', compact('books'));
     }
 }

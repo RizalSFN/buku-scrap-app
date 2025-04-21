@@ -11,9 +11,9 @@
 
 <body>
     <h1 class="w-full text-center font-bold text-2xl py-4">DATA BUKU TOP SELLER 2025</h1>
-    <table class="mt-2 border border-gray-200 text-center w-full">
+    <table class="my-4 border border-gray-200 text-center w-full">
         <thead>
-            <tr class="bg-gray-200 text-neutral-400 font-medium text-sm">
+            <tr class="bg-gray-200 text-black font-medium text-sm">
                 <td class="w-1/12 py-3">ID</td>
                 <td class="w-1/12 py-3">IMAGES</td>
                 <td class="w-1/12 py-3">TITLE</td>
@@ -33,6 +33,11 @@
                     <td class="py-3">{{ $book->scores }}</td>
                 </tr>
             @endforeach
+            <tr>
+                <td colspan="6" class="p-5">
+                    {{ $books->links('pagination::tailwind') }}
+                </td>
+            </tr>
         </tbody>
     </table>
 </body>
